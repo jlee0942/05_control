@@ -10,10 +10,10 @@ int main(int argc, char *argv[]) {
 	scanf("%d", &input);
 
 	if(input>0)
-		printf("input is a positive number");
+		printf("|input|=%d\n", input);
  
 	else
-		printf("input isn't a positive number");
+		printf("|input|=%d\n", -input);
 	
 	return 0;
 }
