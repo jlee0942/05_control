@@ -4,18 +4,29 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) {
+	int answer=59;
+	int input;
 	int num=0;
-	char c;
+
 	
-	printf("input a string:");
-	
-	while((c=getchar())!='\n')
+
+	do
+	{
+		printf("your answer?:");
+		scanf("%d", &input);
+		if(input<answer)
 		{
-		if ('0'<=c&&c<='9')
-			num++;
+			printf("low\n");
 		}
+		else if(input>answer)
+		{
+			printf("high\n");
+		}
+		num++;
+	}while(input!=59);
+	
+ printf("Congratulations!\nyour trial:%i\n", num);
 		
-	printf("%i\n",num);
 
  return 0;
 }
