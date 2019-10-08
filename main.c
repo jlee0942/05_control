@@ -4,10 +4,18 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) {
-	int i;
+	int num=0;
+	char c;
 	
-	for(i=0;i<10; i++)
-		printf("Hello world!\n");
+	printf("input a string:");
+	
+	while((c=getchar())!='\n')
+		{
+		if ('0'<=c&&c<='9')
+			num++;
+		}
 		
-	return 0;
+	printf("%i\n",num);
+
+ return 0;
 }
